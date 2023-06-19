@@ -16,6 +16,7 @@ body .container {
   perspective: 1000px;
   perspective-origin: 800px;
   transform-style: preserve-3d;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 body .container .box {
   display: flex;
@@ -27,17 +28,17 @@ body .container .box {
   border: solid 1px #fff;
   border-radius: 20px;
   transition: 15s;
-  transform: rotateX(50deg);
+  transform: rotateY(50deg);
   transform-style: preserve-3d;
 }
 body .container .box:hover {
-  transform: rotateX(0deg) rotateY(0deg) rotateZ(620deg);
+  transform: rotateX(830deg) rotateY(-800deg) rotateZ(500deg);
 }
 body .container .box .front {
   width: 100px;
   height: 100px;
   background: rgba(240, 219, 71, 0.9);
   border-radius: 15px;
-  transform: rotateY(50deg);
-  border: solid 1px #702020;
+  transform: rotateY(-150deg);
+  box-shadow: 0 0 10px 5px rgba(167, 24, 24, 0.5);
 }/*# sourceMappingURL=styles.css.map */
