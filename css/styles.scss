@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  .container{
+    width: 200px;
+    height: 200px;
+    background: rgb(106, 196, 224);
+    .box{
+      width: 200px;
+      height: 200px;
+      background: #7250ff;
+      border-radius: 10px;
+      transition: 1s;
+    }
+  }
+}
+
+
