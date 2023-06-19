@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body{
   margin: 0;
   display: flex;
@@ -5,15 +10,17 @@ body{
   justify-content: center;
   min-height: 100vh;
   .container{
-    width: 200px;
-    height: 200px;
-    background: rgb(106, 196, 224);
+    background: rgb(106, 196, 224, 0.9);
+    perspective: 1000px;
+    perspective-origin:800px;
+    transform-style: preserve-3d;
     .box{
       width: 200px;
       height: 200px;
-      background: #7250ff;
-      border-radius: 10px;
+      background: rgba(152, 73, 212, 0.9);
+      border-radius: 20px;
       transition: 1s;
+      transform: translate3d(50px, 100px, -45px);
     }
   }
 }
