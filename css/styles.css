@@ -18,10 +18,26 @@ body .container {
   transform-style: preserve-3d;
 }
 body .container .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 200px;
   background: rgba(152, 73, 212, 0.9);
+  border: solid 1px #fff;
   border-radius: 20px;
-  transition: 1s;
-  transform: translate3d(50px, 100px, -45px);
+  transition: 15s;
+  transform: rotateX(50deg);
+  transform-style: preserve-3d;
+}
+body .container .box:hover {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(620deg);
+}
+body .container .box .front {
+  width: 100px;
+  height: 100px;
+  background: rgba(240, 219, 71, 0.9);
+  border-radius: 15px;
+  transform: rotateY(50deg);
+  border: solid 1px #702020;
 }/*# sourceMappingURL=styles.css.map */
